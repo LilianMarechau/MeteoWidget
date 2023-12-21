@@ -1,10 +1,10 @@
 .input__container {
-    width: 25%;
+    width: 40%;
     min-width: 300px;
     background-color: rgba(85, 85, 194, 0.678);
     color: white;
     border-radius: 15px;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -19,6 +19,7 @@ input {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    width: 95%;
 }
 
 input:focus {

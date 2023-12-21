@@ -29,9 +29,11 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Météo</h1>
-      <Input setCityName={setCityName} />
-      <Widget data={cityWeather} />
+      <div className='weather'>
+        <h1>Météo</h1>
+        <Input setCityName={setCityName} />
+        <Widget data={cityWeather} />
+      </div>
     </div>
   )
 }

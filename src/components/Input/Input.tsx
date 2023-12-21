@@ -12,6 +12,7 @@ function Input({setCityName}: IInput) {
             <form action="" onSubmit={(e) => {
                 e.preventDefault();
                 setCityName(inputValue)
+                setInputValue('')
             }}>
                 <input 
                     type="text" 

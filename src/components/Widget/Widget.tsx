@@ -14,9 +14,13 @@ function Widget({data}: IWidget) {
                 <div className='widget__header'>
                     <h2>{city.name}</h2>
                     <img src={`https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} alt="représentation de la météo" />
+                    <p>{Math.round(city.main.temp)}°C</p>
+                    <div className="widget__temp">
+                        <p><span>↑</span> {Math.round(city.main.temp_max)}°</p>
+                        <p><span>↓</span> {Math.round(city.main.temp_min)}°</p>
+                    </div>
                 </div>
                 <em>{city.weather[0].description}</em>
-                <p>Température <span>{city.main.temp}°C</span></p>
                 <p>Ressenti <span>{city.main.feels_like}°C</span></p>
                 <p>Humidité <span>{city.main.humidity}%</span></p>
             </div>
