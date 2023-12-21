@@ -1,14 +1,13 @@
 
 
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 40%;
+  margin: 1rem auto;
 }
-
-
 
 h1 {
   color: white;
   text-align: center;
+  width: 112%;
 }
+

@@ -4,6 +4,7 @@ body {
   margin: 0;
   background: -webkit-linear-gradient(180deg, hsla(180, 33%, 72%, 1) 0%, hsla(229, 69%, 45%, 1) 100%);
   height: 100%;
+  width: 100%;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 

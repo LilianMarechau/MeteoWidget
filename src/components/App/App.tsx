@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Widget from '../Widget/Widget';
+import WidgetList from '../WidgetList/WidgetList';
 import axios from 'axios';
 import './App.css';
 import IWeather from '../../@types/IWeather';
@@ -32,7 +32,7 @@ function App() {
       <div className='weather'>
         <h1>Météo</h1>
         <Input setCityName={setCityName} />
-        <Widget data={cityWeather} />
+        <WidgetList data={cityWeather} />
       </div>
     </div>
   )
