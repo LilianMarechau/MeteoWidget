@@ -3,11 +3,12 @@ import Widget from '../Widget/Widget';
 import axios from 'axios';
 import './App.css';
 import IWeather from '../../@types/IWeather';
+import Input from '../Input/Input';
 
 function App() {
 
   const [ cityWeather, setCityWeather ] = useState<[] | IWeather[]>([]);
-  const [ cityName, setCityName ] = useState('Paris');
+  const [ cityName, setCityName ] = useState('Germonville');
 
   const fetchData = async () => {
     console.log('fetch')
@@ -24,11 +25,12 @@ function App() {
 
   useEffect(() => {
     fetchData();
-  }, [])
+  }, [cityName])
 
   return (
     <div className='container'>
-      <h1>Widget Météo</h1>
+      <h1>Météo</h1>
+      <Input setCityName={setCityName} />
       <Widget data={cityWeather} />
     </div>
   )

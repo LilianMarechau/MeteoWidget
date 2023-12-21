@@ -8,9 +8,9 @@ interface IWidget {
 function Widget({data}: IWidget) {
     // console.log(data);
     return (
-        <div className="widget__container">
+        <div>
         {data && data.map((city: IWeather) => (
-            <div key={city.id}>
+            <div className="widget__container" key={city.id}>
                 <div className='widget__header'>
                     <h2>{city.name}</h2>
                     <img src={`https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} alt="représentation de la météo" />
