@@ -14,7 +14,7 @@ function Widget({city}: IWIdgetProp) {
         // Utilisation de setInterval pour mettre à jour l'heure chaque seconde
         const intervalId = setInterval(() => {
             let date = new Date();
-            date.setSeconds(date.getSeconds() + timezone + 1);
+            date.setSeconds(date.getSeconds() + (timezone - 3600) + 1);
 
             const heure = date.toLocaleTimeString(undefined, { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
 
