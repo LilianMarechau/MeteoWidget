@@ -8,7 +8,7 @@ import Input from '../Input/Input';
 function App() {
 
   const [ cityWeather, setCityWeather ] = useState<[] | IWeather[]>([]);
-  const [ cityName, setCityName ] = useState('Germonville');
+  const [ cityName, setCityName ] = useState('Paris');
 
   const fetchData = async () => {
     console.log('fetch')
