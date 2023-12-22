@@ -17,6 +17,7 @@ function Input({setCityName}: IInput) {
                 <input 
                     type="text" 
                     value={inputValue}
+                    placeholder="type a city..."
                     onChange={(e) => {
                         setInputValue(e.target.value)
                     }}

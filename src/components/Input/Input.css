@@ -22,6 +22,10 @@ input {
     width: 95%;
 }
 
+input::placeholder {
+    color: rgb(139, 139, 226);  ;
+}
+
 input:focus {
     outline: none;
     outline: 2px solid  rgb(185, 185, 255);
