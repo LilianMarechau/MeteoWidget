@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import IWeather from '../../@types/IWeather';
 import './WidgetList.css';
 import Widget from './Widget';

@@ -8,7 +8,7 @@ interface IWIdgetProp {
 function Widget({city}: IWIdgetProp) {
 
     const [time, setTime] = useState<string>('');
-    const [timezone, setTimezone] = useState<number>(city.timezone);
+    const [timezone] = useState<number>(city.timezone);
 
     useEffect(() => {
         // Utilisation de setInterval pour mettre à jour l'heure chaque seconde
